@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #e7f6ff;
+  }
+
+.name{
+    color: #FF6347;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 45%;
+    margin-top: 10%;
+    font-size: 50px;
+}
+
+.input {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 20px 20px 60px #c5c5c5,
+           -20px -20px 60px #ffffff;
+    transition: 0.3s;
+    margin-left: 29%;
+    width: 40%;
+    height: 40px;
+   }
+   
+   .input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+
+   .button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #FF6347;
+    background-color: #FF6347;
+    margin-left: 57%;
+    margin-bottom: 2%;
+
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #FF6347;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .button:hover {
+    background: #FF6347;;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #fff;
+  }
+  
+  .button:active {
+    border: 1px solid #FF6347;
+  }
+
+  .wrapper {
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin: 50px auto;
+    height: 2000px;
+}
+
+main{
+  margin: 70px 300px;
+  width: 50%;
+  float: left;
+}
+main .list{
+  margin-bottom: 40px;
+  background-color: #DCDCDC;
+  padding: 10px;
+  border-radius: 15px;
+  color: #696969;
+}
+
+main .delete-icon {
+  float: right;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+main .edit-icon {
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+main .delete-icon:hover,
+main .edit-icon:hover {
+  opacity: 0.5;
+}
+
+.list form {
+  margin-top: 20px;
+}
+.list form input{
+  background: #A9A9A9;
+}
+.list form button {
+  margin-left: 70%;
+}
